@@ -16,6 +16,21 @@ description: >-
   java’s origin and support the farmers that grew it. We take coffee production,
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
+service:
+  title: Our Service
+  services:
+    - image: /img/coffee.png
+      text: Coffee service
+product:
+  title: Our Products
+  products:
+    - image: /img/coffee.png
+      text: Coffee product
+team:
+  title: Our Team
+  members:
+    - image: /img/coffee.png
+      text: Coffee man
 intro:
   blurbs:
     - image: /img/coffee.png
