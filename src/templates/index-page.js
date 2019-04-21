@@ -109,38 +109,39 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
+
+                <div>
+                  <h3>{service.title}</h3>
+                  {service.services.map((each, index) => (
+                    <div key={`service-${index}`}>
+                      <h4>{each.text}</h4>
+                      <PreviewCompatibleImage imageInfo={each} />
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  <h3>{product.title}</h3>
+                  {product.products.map((each, index) => (
+                    <div key={`product-${index}`}>
+                      <h4>{each.text}</h4>
+                      <PreviewCompatibleImage imageInfo={each} />
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  <h3>{team.title}</h3>
+                  {team.members.map((each, index) => (
+                    <div key={`team-${index}`}>
+                      <h4>{each.text}</h4>
+                      <PreviewCompatibleImage imageInfo={each} />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <h3>{service.title}</h3>
-      {service.services.map((each, index) => (
-        <div key={`service-${index}`}>
-          <h4>{each.text}</h4>
-          <PreviewCompatibleImage imageInfo={each} />
-        </div>
-      ))}
-    </section>
-    <section>
-      <h3>{product.title}</h3>
-      {product.products.map((each, index) => (
-        <div key={`product-${index}`}>
-          <h4>{each.text}</h4>
-          <PreviewCompatibleImage imageInfo={each} />
-        </div>
-      ))}
-    </section>
-    <section>
-      <h3>{team.title}</h3>
-      {team.members.map((each, index) => (
-        <div key={`team-${index}`}>
-          <h4>{each.text}</h4>
-          <PreviewCompatibleImage imageInfo={each} />
-        </div>
-      ))}
     </section>
     {/* <pre>{JSON.stringify(service, 2, null, 2)}</pre>
     <pre>{JSON.stringify(product, 2, null, 2)}</pre>
